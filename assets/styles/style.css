@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/* =========================
+1 - Style Basics
+============================ */
 *{
     margin: 0;
     padding: 0;
@@ -18,3 +21,7 @@ header .line{
     background-color: var(--cor-verde);
     height: 10px;
 }
+
+/* =========================
+2 - Header
+============================ */
