@@ -22,6 +22,58 @@ header .line{
     height: 10px;
 }
 
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
 /* =========================
 2 - Header
 ============================ */
+.header-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header-right,
+.header-right .search form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right .search input{
+    font-size: 16px;
+    padding: 10px 13px;
+    border: 1px solid #999;
+    outline: 0px;
+    width: 100%;
+    max-width: 200px;
+    letter-spacing: 0.3px;
+}
+
+.header-right .search button{
+    border: 0;
+    background-color: transparent;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.header-menu{
+    margin-left: 60px;
+}
+
+.header-menu img{
+    cursor: pointer;
+}
+/* =========================
+x - Resposivity 
+============================ */
+
+@media (width <= 1140px){
+    .container{
+        padding: 0px 10px;
+    }
+}
