@@ -217,6 +217,27 @@ a{
     background: url(../images/f5.jpg) no-repeat center/cover;
     background-color: green;
 }
+/* =========================
+7 - AREA 4
+============================ */
+.area4-container{
+    display: grid;
+    grid-template-areas: 
+        "content image-right"
+    ;
+    grid-template-columns: 700px 1fr;
+}
+
+.area4-content{
+    background-color: #e8e9ee;
+    padding: 150px 80px 150px 250px;
+}
+
+.area4-image{
+    grid-area: image-right;
+    background: url(../images/bg3.jpg) no-repeat left/cover;
+    background-color: green;
+}
 
 /* =========================
 x - Resposivity 
