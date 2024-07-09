@@ -29,6 +29,43 @@ header .line{
     margin: auto;
 }
 
+.green-bar{
+    background-color: var(--cor-verde);
+    width: 168px;
+    height: 22px;
+}
+
+h1{
+    display: inline-block;
+    font: 700 6rem/110px var(--font-oswald);
+    margin: 100px 0px 40px 0px;
+}
+
+h2{
+    display: inline-block;
+    text-transform: capitalize;
+    font: 700 3rem/50px var(--font-oswald);
+    margin-top: 30px;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.button-learnMore{
+    display: inline-block;
+    border: 2px solid #454545;
+    padding: 10px 30px;
+    border-radius: 3px;
+    color: #454545;
+    letter-spacing: 1px;
+}
+
+.button-learnMore:hover{
+    background-color: #454545;
+    color: #fff;
+}
+
 /* =========================
 2 - Header
 ============================ */
@@ -75,17 +112,8 @@ header .line{
 ============================ */
 #hero.hero-banner{
     background: url('../images/bg.jpg') no-repeat center right/cover;
-    position: absolute;
+    position: relative;
     height: calc(100dvh - 110px);
-    top: 110px;
-    right: 0;
-    left: 0;
-}
-
-.hero-banner .container h1{
-    display: inline-block;
-    font: 700 6rem/110px var(--font-oswald);
-    margin: 100px 0px 40px 0px;
 }
 
 .hero-images{
@@ -105,6 +133,47 @@ header .line{
 .hero-images img:nth-child(3){
     margin-left: 30px;
 }
+/* =========================
+4 - AREA 1
+============================ */
+.area1-container{
+    display: grid;
+    grid-template-areas: 
+        "content image2"
+        "image1 image2"
+    ;
+    grid-template-columns: 1fr 1fr;
+}
+
+.area1-content{
+    grid-area: content;
+    padding: 80px;
+}
+
+.area1-content .cite{
+    margin: 30px 0px;
+}
+
+.area1-content .text{
+    margin-bottom: 40px;
+    line-height: 25px;
+}
+
+.area1-image1{
+    grid-area: image1;
+    background: url(../images/f2.jpg) no-repeat center/cover;
+    height: 350px;
+    background-color: green;
+}
+
+.area1-image2{
+    grid-area: image2;
+    background: url(../images/f1.jpg) no-repeat center/cover;
+    background-color: red;
+}
+/* =========================
+5 - AREA 2
+============================ */
 /* =========================
 x - Resposivity 
 ============================ */
