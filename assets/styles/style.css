@@ -197,6 +197,28 @@ a{
     background-color: red;
 }
 /* =========================
+6 - AREA 3
+============================ */
+.area3-container{
+    display: grid;
+    grid-template-areas: 
+        "content image-right"
+    ;
+    grid-template-columns: 1fr 1fr;
+    background: url(../images/bg2.jpg) no-repeat left/cover;
+}
+
+.area3-content{
+    padding-top: calc(80px + 200px) ;
+    padding-bottom: calc(80px + 200px) ;
+}
+.area3-image-right{
+    grid-area: image-right;
+    background: url(../images/f5.jpg) no-repeat center/cover;
+    background-color: green;
+}
+
+/* =========================
 x - Resposivity 
 ============================ */
 
