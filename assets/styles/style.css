@@ -49,7 +49,7 @@ h2{
 }
 
 a{
-    text-decoration: none !important;
+    text-decoration: none ;
 }
 
 .button-learnMore{
@@ -248,7 +248,11 @@ footer{
 }
 
 footer a{
-    color: #00ffaa;
+    color: #06a86f;
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
 /* =========================
 x - Resposivity 
