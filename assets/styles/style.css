@@ -364,8 +364,6 @@ x - Resposivity
     .hero-images img{
         border: 6px solid var(--cor-verde);
         border-radius: 50%;
-        width: 140px;
-        height: 140px;
         margin-bottom: 0;
     }
     
