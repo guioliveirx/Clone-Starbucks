@@ -111,9 +111,9 @@ a{
 3 - Hero
 ============================ */
 #hero.hero-banner{
-    background: url('../images/bg.jpg') no-repeat center right/cover;
+    background: url('../images/bg.jpg') no-repeat center/cover;
     position: relative;
-    height: calc(100dvh - 110px);
+    height: auto;
 }
 
 .hero-images{
@@ -126,11 +126,11 @@ a{
     margin-bottom: 100px;
 }
 
-.hero-images img:nth-child(1){
+.hero-images picture:nth-child(1){
     margin-right: 30px;
 }
 
-.hero-images img:nth-child(3){
+.hero-images picture:nth-child(3){
     margin-left: 30px;
 }
 /* =========================
@@ -215,7 +215,7 @@ a{
 .area3-image-right{
     grid-area: image-right;
     background: url(../images/f5.jpg) no-repeat center/cover;
-    background-color: green;
+
 }
 /* =========================
 7 - AREA 4
@@ -225,26 +225,165 @@ a{
     grid-template-areas: 
         "content image-right"
     ;
-    grid-template-columns: 700px 1fr;
+    grid-template-columns: 500px 1fr;
 }
 
 .area4-content{
     background-color: #e8e9ee;
-    padding: 150px 80px 150px 250px;
+    padding: 150px 80px 150px 150px;
 }
 
 .area4-image{
     grid-area: image-right;
     background: url(../images/bg3.jpg) no-repeat left/cover;
-    background-color: green;
+}
+/* =========================
+8 - Footer
+============================ */
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
 }
 
+footer a{
+    color: #a8f8dd;
+}
 /* =========================
 x - Resposivity 
 ============================ */
 
 @media (width <= 1140px){
     .container{
-        padding: 0px 10px;
+        padding: 0px 20px;
+    }
+}
+
+@media (width > 450px) and (width <= 768px){
+    .area1-container,
+    .area2-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .area1-image2,
+    .area2-image4{
+        display: none;
+    }
+    .area4-container{
+        display: grid;
+        grid-template-areas: 
+            "content"
+            "image-right"
+        ;
+        grid-template-columns: 1fr;
+    }
+    .area4-image{
+        grid-area: image-right;
+        background: url(../images/bg3.jpg) no-repeat center/cover;
+        height: 500px;
+    }
+    .area4-content{
+        padding: 80px;
+    }
+}
+
+@media (width <= 450px){
+    .header-right .search input{
+        display: none;
+    }
+    .area1-container,
+    .area2-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .area1-image2,
+    .area2-image4{
+        display: none;
+    }
+    .area4-container{
+        display: grid;
+        grid-template-areas: 
+            "content"
+            "image-right"
+        ;
+        grid-template-columns: 1fr;
+    }
+    .area4-image{
+        grid-area: image-right;
+        background: url(../images/bg3.jpg) no-repeat center/cover;
+        height: 500px;
+    }
+    .area1-content,
+    .area2-content,
+    .area3-content,
+    .area4-content{
+        padding: 80px 30px;
+    }
+    .area3-container{
+        display: grid;
+        grid-template-areas: 
+            "content"
+            "image-right"
+        ;
+        grid-template-columns:1fr;
+        background: url(../images/bg2.jpg) no-repeat  left top/cover;
+    }
+    
+    .area3-content{
+        padding-top: calc(80px + 100px) ;
+        padding-bottom: calc(80px + 100px) ;
+    }
+
+    
+    h1{
+        font-size: 55px;
+        line-height: 60px;
+    }
+    
+    h2{
+        font-size: 40px;
+    }
+    
+    #hero.hero-banner{
+        height: auto;
+        background: none;
+    }
+    
+    .hero-images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+    
+    .hero-images img{
+        border: 6px solid var(--cor-verde);
+        border-radius: 50%;
+        width: 140px;
+        height: 140px;
+        margin-bottom: 0;
+    }
+    
+    .hero-images picture:nth-child(1){
+        margin-right: 0px;
+    }
+    
+    .hero-images picture:nth-child(3){
+        margin-left: 0px;
+    }
+    
+    .area1-image1{
+        background: url(../images/f2-500px.jpg) no-repeat center/cover;
+    }
+    .area2-image3{
+        background: url(../images/f4-500px.jpg) no-repeat center/cover;
+    }
+    .area3-container{
+        background: url(../images/bg2-400px.jpg) no-repeat left/cover;
+    }
+    .area3-image-right{
+        height: 700px;
+        background: url(../images/f5-500px.jpg) no-repeat center/cover;
     }
 }

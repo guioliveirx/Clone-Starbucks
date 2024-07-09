@@ -23,33 +23,50 @@
                     <form>
                         <input type="text" name="search" id="isearch" placeholder="Search">
                         <button>
-                            <img src="assets/images/loupe-16x16.png" alt="icone de uma lupa" width="16px" height="16px">                    
+                            <picture>
+                                <source media="(max-width: 425px)" srcset="assets/images/loupe-30x30.png" width="30px" height="30px">
+                                <img src="assets/images/loupe-30x30.png" alt="icone de uma lupa" width="16px" height="16px">   
+                            </picture>                 
                         </button>
                     </form>
                 </div>
                 <div class="header-menu">
-                    <img src="assets/images/menu-24x24.png" alt="Imagem de um botão menu" width="24px" height="24px">
+                    <picture>
+                        <source media="(max-width: 425px)" srcset="assets/images/menu-30x30.png" width="30px" height="30px">
+                        <img src="assets/images/menu-24x24.png" alt="Imagem de um botão menu" width="24px" height="24px"></picture>
                 </div>
             </div>
         </div>
     </header>
     <main>
         <!-- Banner Start -->
-        <!-- <section id="hero" class="hero-banner">
+        <section id="hero" class="hero-banner">
             <div class="container">
                 <h1>Starbucks ® <br> Happy Hour</h1>
                 <p>We'll meet you in your inbox. Drink deals are on their way</p>
                 <div class="hero-images">
-                    <img src="assets/images/c1-150x150.jpg" alt="Imagem Milk Shake de Nozes" width="148px" height="148px">
-                    <img src="assets/images/c2-150x150.jpg" alt="Imagem Milk Shake de Chocolate" width="148px" height="148px">
-                    <img src="assets/images/c3-150x150.jpg" alt="Imagem Milk Shake de Ovomaltine" width="148px" height="148px">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/c1-120x120.jpg"
+                        alt="Imagem Milk Shake de Ovomaltine" width="120px" height="120px">
+                        <img src="assets/images/c1-150x150.jpg" alt="Imagem Milk Shake de Nozes" width="150px" height="150px">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/c2-120x120.jpg"
+                        alt="Imagem Milk Shake de Ovomaltine" width="120px" height="120px">
+                        <img src="assets/images/c2-150x150.jpg" alt="Imagem Milk Shake de Chocolate" width="150px" height="150px">
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/c3-120x120.jpg"
+                        alt="Imagem Milk Shake de Ovomaltine" width="120px" height="120px">
+                        <img src="assets/images/c3-150x150.jpg" alt="Imagem Milk Shake de Ovomaltine" width="150px" height="150px">
+                    </picture>                
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- Banner End -->
          <!-- Area 1 Start -->
          <section id="area1" class="area1-container">
-            <!-- <div class="area1-content">
+            <div class="area1-content">
                 <div class="green-bar"></div>
                 <h2>Four drinks, a million reasons</h2>
                 <p class="cite"><cite>"Just love yourself and you're set." - Lady Gaga</cite></p>
@@ -57,29 +74,29 @@
                 <a class="button-learnMore" href="#">learn more</a>
             </div>
             <div class="area1-image1"></div>
-            <div class="area1-image2"></div> -->
+            <div class="area1-image2"></div>
          </section>
          <!-- Area 1 End -->
           <!-- Area 2 Start -->
          <section id="area2" class="area2-container">
-            <!-- <div class="area1-content">
+            <div class="area1-content">
                 <div class="green-bar"></div>
                 <h2>Introducing Vanilla Sweet Cream Cold Brew—Sweet, Creamy, Cold, Bold.</h2>
                 <p class="text">Just before serving, our slow-steeped custom blend Starbucks® Cold Brew Coffee is topped with a delicate float of house-made vanilla sweet cream that cascades throughout the cup.</p>
                 <a class="button-learnMore" href="#">learn more</a>
             </div>
             <div class="area2-image3"></div>
-            <div class="area2-image4"></div> -->
+            <div class="area2-image4"></div>
          </section>
          <!-- Area 2 End -->
          <!-- Area 3 Start -->
           <section id="area3" class="area3-container">
-                <!-- <div class="area3-content area1-content">
+                <div class="area3-content area1-content">
                     <h2>The New Ultra Caramel Frappuccino Is Here!</h2>                   
                     <p class="text">Congrats on doing that thing! This calls for caramel. Lots of it. With cold brew whipped cream. The new Ultra Caramel Frappuccino is here!</p>
                     <a class="button-learnMore" href="#">learn more</a>
                 </div>
-                <div class="area3-image-right"></div> -->
+                <div class="area3-image-right"></div>
           </section>
          <!-- Area 3 End --> 
          <!-- Area 4 Start -->
@@ -96,7 +113,8 @@
          <!-- Area 4 End -->
     </main>
     <footer>
-        
+        <span>Desenvolvido por <a href="https://github.com/guioliveirx" target="_blank" rel="noopener norefferer">Guilherme de Oliveira</a></span> 
+        <p style="margin-top: 20px;">Créditos do layout para <a href="https://starbucks.nicepage.io/" target="_blank" rel="noopener norefferer">Nicepage</a></p>
     </footer>
 </body>
 </html>
