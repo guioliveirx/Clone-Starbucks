@@ -126,11 +126,11 @@ a{
     margin-bottom: 100px;
 }
 
-.hero-images picture:nth-child(1){
+.hero-images img:nth-child(1){
     margin-right: 30px;
 }
 
-.hero-images picture:nth-child(3){
+.hero-images img:nth-child(3){
     margin-left: 30px;
 }
 /* =========================
@@ -367,11 +367,11 @@ x - Resposivity
         margin-bottom: 0;
     }
     
-    .hero-images picture:nth-child(1){
+    .hero-images img:nth-child(1){
         margin-right: 0px;
     }
     
-    .hero-images picture:nth-child(3){
+    .hero-images img:nth-child(3){
         margin-left: 0px;
     }
     
